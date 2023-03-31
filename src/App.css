@@ -15,6 +15,22 @@
  .swiper {
   @apply md:w-[600px] md:h-[300px]
 }
+.swiper-scrollbar{
+  @apply hidden
+}
+.swiper-button-prev{
+  @apply md:w-40 md:h-40 md:bg-white md:rounded-full
+}
+.swiper .swiper-button-prev:after{
+  @apply md:text-xl hidden
+}
+
+.swiper-button-next{
+  @apply md:w-40 md:h-40 md:bg-white md:rounded-full
+}
+.swiper .swiper-button-next:after{
+  @apply md:text-xl hidden
+}
 
 /*============================
  =========NAVBAR MENU=========*/
