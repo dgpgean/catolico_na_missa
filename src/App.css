@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*============================
+ =========Geral=========*/
+
+ .container{
+  @apply md:px-12 px-2 text-center box-border
+ }
+ h1{
+  @apply text-4xl 
+ }
+
+/*============================
+ =========NAVBAR MENU=========*/
+ .navbar {
+  @apply bg-default-light text-default-dark pt-12 md:px-24 md:pb-0 pb-12  md:flex-col
+}
+
+#menu_desktop{
+  @apply md:flex hidden
+}
+
+#menu_mobile{
+  @apply md:hidden fixed bottom-0 border-none bg-default-dark w-full text-default-light
+}
+
+#menu_mobile li a {
+  @apply p-2 flex
+}
+
+.navbar ul{
+  @apply flex font-bold justify-center mt-12 border-default-dark border-t-[1px] md:p-0 p-3 gap-16 
+}
+.navbar ul li a{
+  @apply md:p-4 flex md:border-t-[3px] md:border-default-light
+}
+
+#menu_desktop  li .active{
+  @apply  border-t-[3px] border-default-dark rounded-none
+}
+
+
+.navbar img{
+  @apply rounded-full w-52 h-52 m-auto
+}
+
+.active {
+  @apply bg-default-light rounded-md text-default-dark
+}
+
+/*============================
+ ===========FOOTER==========*/
+ footer{
+   @apply  bg-default-dark md:mb-0 mb-16
+ }
+ 
+ /*============================
+ ===========HOME==========*/
+ h1.title{
+  @apply p-9
+ }
+ .cards_services h3{
+  @apply text-3xl
+ }
+
+ .cards_services{
+  @apply flex flex-col md:w-72 
+ }
+
+ .cards_services img{
+  @apply rounded-md h-44 mt-3
+ }
+ .list_cards{
+  @apply md:flex md:px-0 px-3 gap-16 flex-col justify-center
+ }
