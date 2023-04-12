@@ -13,6 +13,9 @@
   @apply text-4xl 
  }
 
+body{
+  @apply bg-default-dark
+}
 
 /*============================
  =========NAVBAR MENU=========*/
@@ -25,7 +28,12 @@
 }
 
 #menu_mobile{
-  @apply md:hidden fixed bottom-0 border-none bg-default-dark w-full text-default-light
+  @apply md:hidden flex flex-col fixed gap-3 text-sm px-2 w-[50%] bg-slate-500 h-full mt-0 justify-start pt-8 left-[-100%] transition-all duration-700
+
+}
+
+#menu_mobile.show_menu{
+  @apply left-0
 }
 
 #menu_mobile li a {
@@ -40,7 +48,7 @@
 }
 
 .navbar img{
-  @apply w-56 absolute top-[-50px]
+  @apply w-56 absolute top-[-50px] left-[18%]
 }
 
 #menu_desktop  li .active{

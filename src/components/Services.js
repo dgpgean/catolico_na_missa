@@ -7,12 +7,17 @@ import { GiPrayer } from 'react-icons/gi';
 const Services = () => {
   const [documents] = useAllPrismicDocumentsByType('servicos');
 
+  function showMenu(){
+    let btnMenu = document.querySelector("#menu_mobile")
+    btnMenu.classList.toggle('show_menu')
+ }
+
   console.log(documents)
   return (
     <div>
       <div className='list_cards'>
         {documents && documents.map(item => (
-          <div className='cards_services'>
+          <div className='cards_services' onClick={() => showMenu()}>
             <NavLink to={item.data.rota_da_pagina[0].text}>
             <div className='icon_service'>
               <img src={item.data.icone.url}/>
