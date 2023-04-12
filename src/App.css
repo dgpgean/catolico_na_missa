@@ -7,35 +7,17 @@
  =========Geral=========*/
 
  .container{
-  @apply md:px-12 px-2 text-center box-border
+  @apply md:px-12 px-2 text-center box-border pt-16
  }
  h1{
   @apply text-4xl 
  }
- .swiper {
-  @apply md:w-[600px] md:h-[300px]
-}
-.swiper-scrollbar{
-  @apply hidden
-}
-.swiper-button-prev{
-  @apply md:w-40 md:h-40 md:bg-white md:rounded-full
-}
-.swiper .swiper-button-prev:after{
-  @apply md:text-xl hidden
-}
 
-.swiper-button-next{
-  @apply md:w-40 md:h-40 md:bg-white md:rounded-full
-}
-.swiper .swiper-button-next:after{
-  @apply md:text-xl hidden
-}
 
 /*============================
  =========NAVBAR MENU=========*/
  .navbar {
-  @apply bg-default-light text-default-dark pt-12 md:px-24 md:pb-0 pb-12  md:flex-col
+  @apply  md:px-24 md:pb-0 md:flex-col
 }
 
 #menu_desktop{
@@ -51,20 +33,20 @@
 }
 
 .navbar ul{
-  @apply flex font-bold justify-center mt-12 border-default-dark border-t-[1px] md:p-0 p-3 gap-16 
+  @apply flex font-bold justify-center mt-12 border-default-dark  md:p-0 gap-16 
 }
 .navbar ul li a{
   @apply md:p-4 flex md:border-t-[3px] md:border-default-light
+}
+
+.navbar img{
+  @apply w-56 absolute top-[-50px]
 }
 
 #menu_desktop  li .active{
   @apply  border-t-[3px] border-default-dark rounded-none
 }
 
-
-.navbar img{
-  @apply rounded-full w-52 h-52 m-auto
-}
 
 .active {
   @apply bg-default-light rounded-md text-default-dark
@@ -82,20 +64,24 @@
   @apply p-9
  }
  .cards_services h3{
-  @apply text-3xl
+  @apply text-sm
  }
 
  .cards_services{
-  @apply flex flex-col md:w-72 
+  @apply flex bg-white w-[48%] rounded-lg  h-40
  }
 
  .cards_services a{
-  @apply flex flex-col 
+  @apply flex flex-col h-full justify-center items-center gap-5
+ }
+
+ .icon_service{
+  @apply bg-red-800 rounded-full flex justify-center w-[40%] p-3
  }
 
  .cards_services img{
-  @apply rounded-md h-44 mt-3
+  @apply w-full
  }
  .list_cards{
-  @apply md:flex md:flex-row md:px-0 px-3 gap-16 flex-col justify-center
+  @apply md:flex md:flex-row md:px-0 px-3 flex flex-wrap justify-between gap-[12px]
  }
