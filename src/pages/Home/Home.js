@@ -37,6 +37,6 @@ Esta Política entra em vigor em 01/04/2024.
 
 </div>
 
-
+)}
 
 export default Home
