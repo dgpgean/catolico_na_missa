@@ -35,6 +35,8 @@ Se você tiver dúvidas ou preocupações sobre esta Política, entre em contato
 
 Esta Política entra em vigor em 01/04/2024.
 
+</div>
+
 
 
 export default Home
